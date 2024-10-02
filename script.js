@@ -89,7 +89,7 @@ function moveBall() {
     if (ball.x > paddle.x && ball.x < paddle.x + paddle.width && ball.y + ball.size > paddle.y) {
         ball.dy = -Math.abs(ball.dy); // Ensure the ball bounces upward
         score++;
-        document.getElementById('score').textContent = 'Score: ${score}';
+        document.getElementById('score').textContent = `Score: ${score}`;
 
         // Increase ball height (dy) slightly on every collision with the paddle
         ball.dy -= 0.5;
